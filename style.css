@@ -1,0 +1,443 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width:100%;
+}
+
+/* .section {
+  width:100%;
+} */
+
+header {
+  display: flex;
+  /* flex-grow: 1; */
+  flex-wrap: wrap;
+  /* width:100%; */
+}
+
+header div {
+  width: 40%;
+}
+
+.hlogo {
+  padding-left: 10%;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.menu span {
+  margin: 0 5px;
+}
+
+.homepage {
+  display: grid;
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+  color: white;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "home home femme homme"
+    "home home enfant chose";
+}
+
+.homepage div {
+  background-repeat: no-repeat;
+  padding-top: 30%;
+}
+
+.home {
+  grid-area: home;
+  background-image: url(left-banner-image.jpg);
+}
+
+#home {
+  color: rgba(0, 0, 0, 0.4)
+}
+
+.bouton {
+  border: solid 1px white;
+  padding: 10px;
+}
+
+.femme {
+  grid-area: femme;
+  background-image: url(baner-right-image-01.jpg);
+}
+
+.homme {
+  grid-area: homme;
+  background-image: url(baner-right-image-02.jpg);
+}
+
+.enfant {
+  grid-area: enfant;
+  background-image: url(baner-right-image-03.jpg);
+}
+
+.chose {
+  grid-area: chose;
+  background-image: url(baner-right-image-04.jpg);
+}
+
+.cont {
+  width: 32%;
+}
+  
+.details {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "H4 H4 H4 star"
+    "P P . .";
+}
+
+.star {
+  grid-area: star;
+  width: 60px;
+  /* position: absolute; */
+  /* flex-direction: row; */
+}
+
+.details h4 {
+  grid-area: H4;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.details P {
+  grid-area: P;
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.4)
+}
+
+.section {
+  padding: 50px 11.5%;
+  position: relative;
+  width: 77%;
+  margin:0;
+}
+
+.section i {
+  color: rgba(0, 0, 0, 0.4)
+}
+
+.fleche img {
+  /* top: 45%; */
+  border: 1px solid black;
+}
+
+.fleche img:last-child {
+  position: absolute;
+  right: 6%;
+  top: 45%;
+}
+
+.fleche img:first-child {
+  position: absolute;
+  left: 7%;
+  top: 45%;
+}
+
+.fleche {
+  position: absolute;
+  width: 99%;
+  height: 100%;
+}
+.cont img:first-child{
+  width: 100%;
+}
+.produit {
+  display: flex;
+  gap: 2%;
+  /* justify-content: space-between; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Explore {
+  display: grid;
+  /* height: 400px; */
+  width: 77%;
+  padding: 12px 11.5%;
+  gap: 20px;
+  color: black;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "EXP EXP bag sac"
+    "EXP EXP sac_a_main type";
+}
+
+.Explore div {
+  background-repeat: no-repeat;
+}
+
+.EXP {
+  grid-area: EXP;
+}
+
+.EXP p {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.more {
+  border: solid 1px black;
+  padding: 10px;
+}
+
+.bag {
+  grid-area: bag;
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  /* border: solid 1px black; */
+  /* height: 263px;
+  width: 263px; */
+  padding: 30% 0;
+  /* margin: 10px; */
+}
+
+.sac {
+  grid-area: sac;
+  /* height: 263px;
+  width: 263px; */
+}
+
+.sac_a_main {
+  grid-area: sac_a_main;
+  /* height: 263px;
+  width: 263px; */
+}
+
+.type {
+  grid-area: type;
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  padding: 30% 0;
+  /* border: solid 1px black; */
+  /* height: 263px;
+  width: 263px; */
+}
+
+.Explore img {
+  width: 100%;
+  height: 100%;
+}
+
+.parentsocial {
+  display: flex;
+  /* padding: 10px 11.5%; */
+  margin: 0 10%;
+  flex-direction: column;
+  width: 80%;
+}
+
+.social {
+  /* display: flex;
+  flex-direction: row; */
+  /* text-align: center; */
+  padding: 0;
+  flex-direction: row;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  padding: 0;
+}
+
+.detail {
+  display: grid;
+  /* height: 300vh; */
+  width: 80%;
+  gap: 20px;
+  color: black;
+  /* display: flex; */
+  grid-template-columns: 3fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-areas: "souscrire location hour"
+    "souscrire phone mail"
+    "souscrire chose social";
+  /* flex-direction: column; */
+  margin: 0 10%;
+}
+
+.quote {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.EXP img {
+  height: 50px;
+  width: 50px;
+  color: black;
+}
+
+cite {
+  padding-left: 10px;
+}
+
+.souscrire h3 {
+  font-size: 2em;
+  padding: 0;
+}
+
+.souscrire i {
+  color: rgba(0, 0, 0, 0.4)
+}
+
+form input {
+  padding: 7px;
+  height: 100%;
+  width: 100%;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+
+.envoie {
+  /* width: 28px; */
+  height: 40px;
+  margin-top: 0;
+}
+
+.souscrire {
+  grid-area: souscrire;
+  /* border: solid 1px black; */
+  /* height: 300px; */
+  /* flex-flow: nowrap; */
+  /* padding: 12px 11.5%; */
+}
+
+.location {
+  grid-area: location;
+  /* border: solid 1px black; */
+  /* height: 0px; */
+}
+
+.location p,
+.hour p,
+.phone p,
+.office p,
+.socialmedia p,
+.mail address {
+  color: rgba(0, 0, 0, 0.4)
+}
+
+.hour {
+  grid-area: hour;
+  /* border: solid 1px black; */
+  /* height: 40px; */
+}
+
+.phone {
+  grid-area: phone;
+  /* border: solid 1px black; */
+  /* height: 40px; */
+}
+
+.mail {
+  grid-area: mail;
+  /* border: solid 1px black; */
+  /* height: 40px; */
+}
+
+.office {
+  grid-area: chose;
+  /* border: solid 1px black; */
+  /* height: 40px; */
+}
+
+.socialmedia {
+  grid-area: social;
+  /* border: solid 1px black; */
+  /* height: 40px; */
+}
+
+footer {
+  background-color: #2c2a2a;
+  color: white;
+  width: 80%;
+  padding: 0px 10%;
+}
+
+.footer {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  /* padding: 12px 11.5%; */
+  gap: 20px;
+}
+
+.footer div,
+.footer span {
+  padding: 50px;
+}
+
+/* .footer div span {
+  justify-content: space-around;
+} */
+
+.pied {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  /* background-color: rgb(100, 98, 98); */
+  color: white;
+}
+
+.rs img {
+  padding-right: 15px;
+  padding-bottom: 15px;
+  /* padding-top: 15px; */
+}
+
+#Facebook {
+  height: 20px;
+  ;
+  width: 20px;
+}
+
+#twitter {
+  height: 20px;
+  width: 20px;
+}
+
+#Linked {
+  height: 20px;
+  width: 20px;
+}
+
+#behance {
+  height: 20px;
+  width: 20px;
+}
+
+hr {
+  border-style: dashed;
+  border-width: 1px;
+}
+
+footer hr {
+  border-style: solid;
+}
